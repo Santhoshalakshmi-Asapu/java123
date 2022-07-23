@@ -1,0 +1,295 @@
+JFM1T2_Assignment
+================================================================================================
+BooleanOperation
+================================================================================================
+ Print the results for the following statements considering x = true and y = false
+             1. x&&y
+             2. x||y
+             3. !x
+             4. !y
+     Prompt the user input from the terminal.
+             
+     Sample Input:
+     Enter x as boolean value(true/false): 
+     true
+     Enter y as boolean value(true/false): 
+     false
+     
+     Expected Output:
+     x&&y is: false
+     x||y is: true
+     !x is: false
+     !y is: true
+
+*/
+
+//import statements for java program to read inputs using Scanner class
+import java.util.Scanner;
+
+public class BooleanOperation {
+public static void main(String[] args){
+//main method
+
+//Use the scanner class to provide input at execution time using scanner object
+    Scanner sc=new Scanner(System.in);
+
+//Take input from user
+    System.out.println("Enter x as boolean value(true/false): ");
+    boolean x=sc.nextBoolean();
+    System.out.println("Enter y as boolean value(true/false): ");
+    boolean y=sc.nextBoolean();
+//print apppropriate result for boolean operations
+//Output
+    System.out.println("(x&&y) is: "+(x&&y));
+    System.out.println("(x||y) is: "+(x||y));
+    System.out.println("!x is: "+ !x);
+    System.out.println("!y is: "+ !y);
+  }
+}
+============================================================================================================================================
+CheckingEquality
+============================================================================================================================================
+   Write a program to perform the below actions and print the result. Check if the below numbers are equal or not.
+    1. 30 and 20
+    2. 20 and 20
+    3. 20 and 30
+    Prompt the user input from the terminal.
+    
+    Sample Input:
+    Enter first number: 
+    30
+    Enter second number: 
+    20
+    
+    Expected Output:
+    30 and 20 is not equal
+     
+*/
+
+//import statements for java program to read inputs using Scanner class
+import java.util.Scanner;
+
+public class CheckingEquality {
+ public static void main(String[] args){
+    
+  //main method
+
+  //Use the scanner class to provide input at execution time using scanner object
+    Scanner sc=new Scanner(System.in);
+
+  //Take input from user
+    System.out.println("Enter first number: ");
+    int a=sc.nextInt();
+    System.out.println("Enter second number: ");
+    int b=sc.nextInt();
+  //check if the two numbers are equal or not
+  //If the two numbers are equal then print both are equal else print both are not equal
+    if(a==b){
+      System.out.println(a+" and "+b+" is equal");
+    }
+    else{
+      System.out.println(a+" and "+b+" is not equal");
+    }
+  }
+}
+==============================================================================================================================================
+Expression
+==============================================================================================================================================
+ Assume that the integer variable a is 20 and b is 10. Evaluate the following expressions and print the value of resultant variable:
+     1. int b= a-- - --a;
+     2. int c=a--;
+     3. int d=a>>2;
+     4. int e=a&b;
+     Prompt the user input from the terminal.
+     
+     Sample Input:
+     Enter a value: 
+     20
+     Enter b value: 
+     10
+     
+     Expected Output:
+     a-- - --a is: 2
+     a-- is: 18
+     a>>2 is: 4
+     a&b is: 0
+*/
+
+//import statements for java program to read inputs using Scanner class
+import java.util.Scanner;
+
+public class Expression {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter a value");
+    int a=sc.nextInt();
+    System.out.println("enter b value");
+    int b=sc.nextInt();
+    b=a-- - --a;
+    int c=a--;
+    int d=a>>2;
+    int e=a&b;
+    System.out.println("a-- - --a is"+b);
+    System.out.println("a-- is"+c);
+    System.out.println("a>>2 is"+d);
+    System.out.println("a&b is"+e);
+  }
+}
+==============================================================================================================================================
+Operations
+==============================================================================================================================================
+Write a program to perform the below actions and print the result.
+     1. Difference of 2 numbers (30 and 10)
+     2. Product of 2 numbers (45 and 2)
+     3. Division of 2 numbers (600 and 10)
+     4. Increment and Decrement the number (15)
+     5. Remainder of 2 numbers (14 and 5)
+     Prompt the user input from the terminal.
+*/
+
+//import statements for java program to read inputs using Scanner class
+import java.util.Scanner;
+
+public class Operations {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter your first number");
+    int a=sc.nextInt();
+    System.out.println("enter your second number");
+    int b=sc.nextInt();
+    System.out.println("enter your third number");
+    int a1=sc.nextInt();
+    System.out.println("enter your forth number");
+    int b1=sc.nextInt();
+    System.out.println("enter your fiveth number");
+    int a2=sc.nextInt();
+    System.out.println("enter your sixth number");
+    int b2=sc.nextInt();
+    System.out.println("enter your seventh number");
+    int a3=sc.nextInt();
+    System.out.println("enter your eight number");
+    int a4=sc.nextInt();
+    System.out.println("enter your nine number");
+    int b4=sc.nextInt();
+    System.out.println("difference of"+a+"and"+b+"is"+(a-b));
+    System.out.println("product of"+a1+"and"+b1+"is"+(a1*b1));
+    System.out.println("division of"+a2+"and"+b2+"is"+(a2/b2));
+    System.out.println("increment of" +(++a3)+ "decrement of"  +(--a3));
+    System.out.println("remaider of"+a4+ "and" +b4+ "is" +(a4%b4));
+    
+  }
+    
+  }
+==============================================================================================================================================
+ShortHandOperators
+==============================================================================================================================================
+ Perform the following operations where a = 10 and b =20 using shorthand assignment operators and print the value of a in console for each expression.
+     1. a*= b
+     2. a-= b
+     3. a/= b
+     4. a%= b
+    Prompt the user input from the terminal.
+    
+    Sample Input:
+    Enter first value: 
+    10
+    Enter second value: 
+    20
+    
+    Expected Output:
+    a*=b is: 200
+    a-=b is: 180
+    a/=b is: 9
+    a%=b is: 9
+*/
+
+//import statements for java program to read inputs using Scanner class
+import java.util.Scanner;
+
+public class ShortHandOperators {
+public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter first value");
+    int a=sc.nextInt();
+    System.out.println("enter second value");
+    int b=sc.nextInt();
+    System.out.println("a*=b is :"+ (a*=b));
+    System.out.println("a-=b is:"+ (a-=b));
+    System.out.println("a/=b is:"+ (a/=b));
+    System.out.println("a%=b is:"+ (a%=b));
+  }
+==============================================================================================================================================
+SumWithoutPlus
+==============================================================================================================================================
+ Write a program to print the sum of two numbers without using + operator.
+    Prompt the user input from the terminal.
+    
+    Sample Input:
+    Enter first number: 
+    22
+    Enter second number: 
+    50
+    
+    Expected Output:
+    The sum of two numbers is: 72
+*/
+
+//import statements for java program to read inputs using Scanner class
+import java.util.Scanner;
+
+public class SumWithoutPlus {
+public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter first number");
+    int a=sc.nextInt();
+    System.out.println("enter second number");
+    int b=sc.nextInt();
+    int result=a-(-b);
+    System.out.println("sum of two numbers" + a + "and" + b +"is"+result);
+  
+  }
+}
+==============================================================================================================================================
+Swapping
+==============================================================================================================================================
+Write a program that swaps the values of 2 variables without using third variable.
+    Prompt the user input from the terminal.
+    
+    Sample Input:
+    Enter first number: 
+    12
+    Enter second number: 
+    45
+    
+    Expected Output:
+    Before swapping: 12 , 45
+    After swapping: 45 , 12
+*/
+
+//import statements for java program to read inputs using Scanner class
+import java.util.Scanner;
+
+public class Swapping {
+  public static void main(String arg[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter first number");
+    int a=sc.nextInt();
+    System.out.println("enter second number");
+    int b=sc.nextInt();
+    System.out.println("Before Swap");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+ 
+        int temp = a;
+        a = b;
+        b = temp;
+        System.out.println("After swap");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+  }
+}

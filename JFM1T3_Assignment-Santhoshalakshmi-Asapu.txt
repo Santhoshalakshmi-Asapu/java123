@@ -1,0 +1,217 @@
+//JFM1T3_Assignment5:
+/*
+1.Write a program to initialize a boolean variable and print it's opposite value on console.
+
+  Sample Input:true
+
+  Expected Output:false
+
+*/
+import java.util.Scanner;
+public class BooleanOperation {
+public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter boolean value");
+    boolean b=sc.nextBoolean();
+    boolean result = (b==true)? false : true;
+     System.out.println("Opposite value: "+result);
+    sc.close();
+  }
+}
+
+//Define main method
+
+//Declare a variable and initialize it as true or false 
+
+//Print the Result using not operator 
+=============================================================================================================================================================================
+Circle
+=============================================================================================================================================================================
+//JFM1T3_Assignment1: 
+/* Write a program to calculate the circumference of a circle and print the result in whole number. 
+  Allow user to input the cirlce radius from terminal. 
+
+  Sample Input:
+    radius of the circle=6
+
+  Expected Output:
+   Circumference of the circle=38
+   
+
+*/ 
+
+//import statement for java program to read inputs using Scanner class 
+import java.util.Scanner;
+
+public class Circle { 
+  public static void main(String args[])
+  {
+    int radius; 
+      double circumference;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter the radius of the circle ::");
+      radius = sc.nextInt();
+      circumference = Math.PI*2*radius;
+      System.out.println("Circumference of the circle is ::"+circumference);
+   }
+  }
+//Define main method
+
+//Declare the variable
+
+
+//Use the scanner class to provide radius at execution time
+
+/*
+Scanner scanner = new Scanner(System.in);
+System.out.println("Enter radius as a positive integer");
+radius= scanner.nextInt();
+*/
+
+//Caluculate the circumference of the circle
+
+//Casting the floating-point value to int  
+
+//Print the Result
+
+=============================================================================================================================================================================
+MobileNumber
+=============================================================================================================================================================================
+//JFM1T3_Assignment4:
+/*
+1.Write a program to store your best friend's mobile number in a variable and print the last 4 digits. Consider the following sample for reference.
+  Mobile number should accept only 10 digits. Not less than 10 digits or greater than 10 digits. 
+  Allow user to input the phone number from the terminal
+
+  Sample Input:
+        mobileNum=9393927890
+
+  Expected Output:
+        Your friend's mobile number ends with ******7890
+
+*/
+
+//import statements for java program to read inputs using Scanner class 
+import java.util.Scanner;
+
+public class MobileNumber {
+
+//Define the main method
+public static void main(String args[]){
+  
+
+//Declare the variable
+long mobileNum;
+//Use the scanner class to provide mobileNum at execution time
+Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter phone number (10 digits)=");
+    mobileNum = scanner.nextLong();
+/*
+Scanner scanner = new Scanner(System.in);
+System.out.println("Enter phone number (10 digits)");
+mobileNum = scanner.nextLine();
+*/
+
+//Verify if the mobile number is equal to 10 digits or not
+ if(mobileNum<9999999999L){
+		        if(mobileNum<=999999999||mobileNum<=99999999||mobileNum<=9999999||mobileNum<=999999||mobileNum<=99999||mobileNum<=9999||mobileNum<=999||mobileNum<=99){
+		        System.out.println("Error");
+		    }
+		    else{
+		        System.out.println("Entered number is:******"+(mobileNum%10000));
+		    }
+		}
+    scanner.close();
+//If the mobile number is equal to 10 digits then extract the last 4 digits else print error message
+  if((mobileNum+"").length()==10){
+      System.out.println("Your friend's mobile number ends with ******"+(mobileNum%10000));
+    }
+    else{
+      System.out.println("Error");
+    }
+
+//Print the result
+//System.out.println("Mobile number ends with ******"+variablename)
+}
+}
+=============================================================================================================================================================================
+Percentage
+=============================================================================================================================================================================
+//JFM1T3_Assignment2:
+/*
+1.Write a program to calculate your percentage assuming total marks given. Print the percentage after rounding it off. 
+  Allow user to input the marks from the terminal. 
+
+  Sample Input:
+        maximum_marks=500
+        total_marks=348
+
+  Expected Output:
+        percentage= 70%
+       
+
+*/
+
+//import statements for java program to read inputs using Scanner class 
+import java.util.Scanner;
+
+public class Percentage {
+
+//Define the main method
+public static void main(String args[]){
+//Declare the variables
+int maximum_marks;
+    float total_marks;
+    float percentage;
+//Use the scanner class to provide total_marks and maximum_marks at execution time
+
+Scanner scanner = new Scanner(System.in);
+System.out.println("Enter the total marks");
+total_marks= scanner.nextInt();
+System.out.println("Enter maximum marks possible "); 
+maximum_marks=scanner.nextInt(); 
+
+
+
+//Calculate the percentage of marks
+ percentage = (total_marks*100)/maximum_marks;
+
+    int result = (int)(Math.round(percentage));
+//Print the Result
+    System.out.println("percentage = "+result+"%");
+    scanner.close();
+}
+}
+=============================================================================================================================================================================
+Unicode
+=============================================================================================================================================================================
+//JFM1T3_Assignment3:
+/*
+1.Write a program to declare a character variable and initialize it with any alphabet
+ between A-Z. Print the ASCII value/unicode of the respective character.
+
+  Sample Input:
+       character=M
+
+  Expected Output:
+      ASCII value of M is:77
+
+*/
+
+//import statements for java program to read inputs using Scanner class 
+import java.util.Scanner;
+
+public class Unicode {
+
+//Define main method
+public static void main(String args[]){
+//Use the scanner class to provide character at execution time
+Scanner scanner = new Scanner(System.in);  
+char character = scanner.next().charAt(0);  
+int asciiValue = character;
+//Print the Result
+System.out.println("ASCII value of "+character+" is: "+asciiValue);
+    scanner.close();
+}
+}
